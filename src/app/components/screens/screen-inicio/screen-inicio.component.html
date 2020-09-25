@@ -1,5 +1,26 @@
-<app-navbar-sesion-iniciada></app-navbar-sesion-iniciada>
+<app-navbar-home></app-navbar-home>
 
-<h2>Inicio</h2>
+<div class="view pb-5 pt-5">
+    <div class="container mt-5 ">
+        <div class="row text-center ">
+            <div class="col-6 text-center ">
 
-<button type="button" class="btn btn-primary" (click)="navegarHome()">Home</button>
+                <div class="card text-center " style="width: 25rem; ">
+                    <app-cuadro-inicio-sesion></app-cuadro-inicio-sesion>
+                </div>
+
+            </div>
+            <!--col-6-->
+            <div class="col-6 text-center ">
+
+                <div class="card text-center " style="width: 25rem; ">
+                    <app-cuadro-inicio-sesion-adm></app-cuadro-inicio-sesion-adm>
+                </div>
+
+            </div>
+            <!--col-6-->
+
+        </div>
+        <!--row-->
+    </div>
+</div>
