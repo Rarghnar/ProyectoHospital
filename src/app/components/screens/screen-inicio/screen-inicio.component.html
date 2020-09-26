@@ -1,26 +1,40 @@
 <app-navbar-home></app-navbar-home>
 
-<div class="view pb-5 pt-5">
-    <div class="container mt-5 ">
-        <div class="row text-center ">
-            <div class="col-6 text-center ">
+<div class="header bg-primary">
+    <div class="view pb-5 pt-5">
+        <div class="container mt-5 ">
+            <div class="row text-center ">
+                <div class="col-6 text-center ">
 
-                <div class="card text-center " style="width: 25rem; ">
-                    <app-cuadro-inicio-sesion></app-cuadro-inicio-sesion>
+                    <div class="card text-center  border-primary" style="width: 25rem; ">
+                        <app-cuadro-inicio-sesion></app-cuadro-inicio-sesion>
+                    </div>
+
                 </div>
+                <!--col-6-->
+                <div class="col-6 text-center ">
+
+                    <div class="card text-center  border-primary" style="width: 25rem; ">
+                        <app-cuadro-inicio-sesion-adm></app-cuadro-inicio-sesion-adm>
+                    </div>
+
+                </div>
+                <!--col-6-->
 
             </div>
-            <!--col-6-->
-            <div class="col-6 text-center ">
-
-                <div class="card text-center " style="width: 25rem; ">
-                    <app-cuadro-inicio-sesion-adm></app-cuadro-inicio-sesion-adm>
-                </div>
-
-            </div>
-            <!--col-6-->
-
+            <!--row-->
         </div>
-        <!--row-->
     </div>
+    <footer class="bd-footer text-muted bg-light">
+        <div class="container-fluid p-3 p-md-5">
+            <ul class="bd-footer-links">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <p>Designed and built with all the love in the world by the <a href="/docs/4.5/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+            <p>Currently v4.5.2. Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
+        </div>
+    </footer>
 </div>

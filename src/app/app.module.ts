@@ -18,6 +18,7 @@ import { NavbarSesionAcercaDeComponent } from './components/navbar/navbar-sesion
 import { ScreenHomeIngresadoComponent } from './components/screens/screen-home-ingresado/screen-home-ingresado.component';
 import { ScreenContactosInComponent } from './components/screens/screen-contactos-in/screen-contactos-in.component';
 import { ScreenAcercaDeInComponent } from './components/screens/screen-acerca-de-in/screen-acerca-de-in.component';
+import { ScreenPacienteComponent } from './components/screens/screen-paciente/screen-paciente.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ScreenAcercaDeInComponent } from './components/screens/screen-acerca-de
     ScreenHomeIngresadoComponent,
     ScreenContactosInComponent,
     ScreenAcercaDeInComponent,
+    ScreenPacienteComponent,
   ],
   imports: [
     BrowserModule,

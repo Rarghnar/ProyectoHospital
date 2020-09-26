@@ -7,6 +7,7 @@ import { ScreenAcercaDeComponent } from './components/screens/screen-acerca-de/s
 import { ScreenHomeIngresadoComponent } from './components/screens/screen-home-ingresado/screen-home-ingresado.component';
 import { ScreenContactosInComponent } from './components/screens/screen-contactos-in/screen-contactos-in.component';
 import { ScreenAcercaDeInComponent } from './components/screens/screen-acerca-de-in/screen-acerca-de-in.component';
+import { ScreenPacienteComponent } from './components/screens/screen-paciente/screen-paciente.component';
 
 const routes: Routes = [
   {path: 'screen-home', component: ScreenHomeComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'screen-acerca-de', component: ScreenAcercaDeComponent },
   { path: 'screen-home-ingresado', component: ScreenHomeIngresadoComponent },
   { path: 'screen-contactos-in', component: ScreenContactosInComponent },
-  {path: 'screen-acerca-de-in', component: ScreenAcercaDeInComponent},
+  { path: 'screen-acerca-de-in', component: ScreenAcercaDeInComponent },
+  {path: 'screen-paciente', component: ScreenPacienteComponent},
   {path: '', redirectTo: '/screen-home', pathMatch: 'full'}
 ];
 
