@@ -1,40 +1,45 @@
-<app-navbar-sesion-iniciada></app-navbar-sesion-iniciada>
-<div class="header">
-    <div class="container m-5">
+<body>
+    <app-navbar-sesion-iniciada></app-navbar-sesion-iniciada>
+
+    <div class="container-fluid mt-4">
 
         <div class="row">
-            <div class="col-2 text-center">
-                barra lateral
+            <div class="class=col-12 col-md-3 col-xl-2 bd-sidebar">
+                <app-collapsible-in></app-collapsible-in>
             </div>
 
             <div class="col-10">
-                <div class="col-8 m-5 ">
+                <div class="col-10">
+                    <div class="card-body ">
+                        <div class="card">
+                            <button type="submit" class="btn btn-primary" (click)="navegarPaciente()">Ingresar Paciente</button>
+                            <div class="imagen">
+                                <img src="" alt="" class="center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8 mt-3">
                     <div class="card border-primary">
                         <div class="card-body ">
-                            <button class="btn btn-link btn-block text-left " (click)="navegarPaciente()" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
-                                Pacientes
+                            <button class="btn btn-link btn-block text-left " (click)="navegarHabitaciones()" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+                                Habitaciones
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-8 m-5">
-                    <div class="card">
-                        <div class="card-body">
-                            Habitaciones.
+                <div class="col-8 mt-3">
+                    <div class="card border-primary">
+                        <div class="card-body ">
+                            <button class="btn btn-link btn-block text-left " (click)="navegarAgregarMedico()" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+                                Agregar Madico
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-8 m-5">
-                    <div class="card">
-                        <div class="card-body">
-                            This is some text within a card body.
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
-
         </div>
     </div>
-</div>
+</body>
+<app-section></app-section>

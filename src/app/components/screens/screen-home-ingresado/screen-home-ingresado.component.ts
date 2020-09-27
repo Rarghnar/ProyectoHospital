@@ -18,4 +18,13 @@ export class ScreenHomeIngresadoComponent implements OnInit {
     this.router.navigate(['/screen-paciente']);
   }
 
+  // tslint:disable-next-line: typedef
+  navegarHabitaciones() {
+    this.router.navigate(['/screen-habitaciones']);
+  }
+
+  // tslint:disable-next-line: typedef
+  navegarAgregarMedico() {
+    this.router.navigate(['/screen-agregar-medico']);
+  }
 }

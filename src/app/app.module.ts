@@ -19,6 +19,11 @@ import { ScreenHomeIngresadoComponent } from './components/screens/screen-home-i
 import { ScreenContactosInComponent } from './components/screens/screen-contactos-in/screen-contactos-in.component';
 import { ScreenAcercaDeInComponent } from './components/screens/screen-acerca-de-in/screen-acerca-de-in.component';
 import { ScreenPacienteComponent } from './components/screens/screen-paciente/screen-paciente.component';
+import { ScreenHabitacionesComponent } from './components/screens/screen-habitaciones/screen-habitaciones.component';
+import { ScreenAgregarMedicoComponent } from './components/screens/screen-agregar-medico/screen-agregar-medico.component';
+import { FormularioPacienteComponent } from './components/component/formulario-paciente/formulario-paciente.component';
+import { CollapsibleInComponent } from './components/component/collapsible-in/collapsible-in.component';
+import { SectionComponent } from './components/component/section/section.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +44,11 @@ import { ScreenPacienteComponent } from './components/screens/screen-paciente/sc
     ScreenContactosInComponent,
     ScreenAcercaDeInComponent,
     ScreenPacienteComponent,
+    ScreenHabitacionesComponent,
+    ScreenAgregarMedicoComponent,
+    FormularioPacienteComponent,
+    CollapsibleInComponent,
+    SectionComponent,
   ],
   imports: [
     BrowserModule,

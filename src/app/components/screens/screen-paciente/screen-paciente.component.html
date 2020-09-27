@@ -1,2 +1,28 @@
-<app-navbar-sesion-iniciada></app-navbar-sesion-iniciada>
-<p>screen-paciente works!</p>
+<body>
+    <app-navbar-sesion-iniciada></app-navbar-sesion-iniciada>
+
+    <div class="container-fluid mt-5">
+
+        <div class="row">
+            <!--row-->
+            <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+                <!--col sidebar-->
+                <app-collapsible-in></app-collapsible-in>
+            </div>
+            <!--col sidebar-->
+            <main class="col-10 lg-col-12">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <app-formulario-paciente></app-formulario-paciente>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!--row-->
+    </div>
+</body>
+<app-section></app-section>
