@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BackgroundInicioComponent } from './background-inicio.component';
+import { NavbarAcercaDeComponent } from './navbar-acerca-de.component';
 
-describe('BackgroundInicioComponent', () => {
-  let component: BackgroundInicioComponent;
-  let fixture: ComponentFixture<BackgroundInicioComponent>;
+describe('NavbarAcercaDeComponent', () => {
+  let component: NavbarAcercaDeComponent;
+  let fixture: ComponentFixture<NavbarAcercaDeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BackgroundInicioComponent ]
+      declarations: [ NavbarAcercaDeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BackgroundInicioComponent);
+    fixture = TestBed.createComponent(NavbarAcercaDeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -9,7 +9,6 @@ import { NavbarHomeComponent } from './components/navbar/navbar-home/navbar-home
 import { NavbarSesionIniciadaComponent } from './components/navbar/navbar-sesion-iniciada/navbar-sesion-iniciada.component';
 import { CuadroInicioSesionComponent } from './components/component/cuadro-inicio-sesion/cuadro-inicio-sesion.component';
 import { CuadroInicioSesionAdmComponent } from './components/component/cuadro-inicio-sesion-adm/cuadro-inicio-sesion-adm.component';
-import { BackgroundInicioComponent } from './components/backgrouds/background-inicio/background-inicio.component';
 import { ScreenContactosComponent } from './components/screens/screen-contactos/screen-contactos.component';
 import { NavbarContactosComponent } from './components/navbar/navbar-contactos/navbar-contactos.component';
 import { ScreenAcercaDeComponent } from './components/screens/screen-acerca-de/screen-acerca-de.component';
@@ -24,6 +23,7 @@ import { ScreenAgregarMedicoComponent } from './components/screens/screen-agrega
 import { FormularioPacienteComponent } from './components/component/formulario-paciente/formulario-paciente.component';
 import { CollapsibleInComponent } from './components/component/collapsible-in/collapsible-in.component';
 import { SectionComponent } from './components/component/section/section.component';
+import { NavbarAcercaDeComponent } from './components/navbar/navbar-acerca-de/navbar-acerca-de.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,6 @@ import { SectionComponent } from './components/component/section/section.compone
     NavbarSesionIniciadaComponent,
     CuadroInicioSesionComponent,
     CuadroInicioSesionAdmComponent,
-    BackgroundInicioComponent,
     ScreenContactosComponent,
     NavbarContactosComponent,
     ScreenAcercaDeComponent,
@@ -49,6 +48,7 @@ import { SectionComponent } from './components/component/section/section.compone
     FormularioPacienteComponent,
     CollapsibleInComponent,
     SectionComponent,
+    NavbarAcercaDeComponent,
   ],
   imports: [
     BrowserModule,

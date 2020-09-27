@@ -7,8 +7,8 @@
 
     <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Inicio</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="http://localhost:57001/screen-contactos">Contactos</a>
@@ -21,5 +21,12 @@
         <form class="nav-item">
             <a class="btn btn-outline-info my-2 my-sm-0 nav-link" href="http://localhost:57001/screen-inicio">Iniciar Sesión</a>
         </form>
+        <!--agregar ng switch-->
+
+        <div [ngSwitch]="getUrl()">
+            <p *ngSwitchCase="'/screen-home'">
+
+            </p>
+        </div>
     </div>
 </header>
