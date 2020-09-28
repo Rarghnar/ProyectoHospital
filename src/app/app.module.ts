@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ScreenInicioComponent } from './components/screens/screen-inicio/screen-inicio.component';
@@ -24,6 +25,9 @@ import { FormularioPacienteComponent } from './components/component/formulario-p
 import { CollapsibleInComponent } from './components/component/collapsible-in/collapsible-in.component';
 import { SectionComponent } from './components/component/section/section.component';
 import { NavbarAcercaDeComponent } from './components/navbar/navbar-acerca-de/navbar-acerca-de.component';
+//----------------------------------------------------------------------
+import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
+//-----------------------------------------------------------------------------------
 
 @NgModule({
   declarations: [
@@ -48,11 +52,13 @@ import { NavbarAcercaDeComponent } from './components/navbar/navbar-acerca-de/na
     FormularioPacienteComponent,
     CollapsibleInComponent,
     SectionComponent,
-    NavbarAcercaDeComponent,
+    NavbarAcercaDeComponent,    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
