@@ -10,6 +10,7 @@ import { ScreenAcercaDeInComponent } from './components/screens/screen-acerca-de
 import { ScreenPacienteComponent } from './components/screens/screen-paciente/screen-paciente.component';
 import { ScreenHabitacionesComponent } from './components/screens/screen-habitaciones/screen-habitaciones.component';
 import { ScreenAgregarMedicoComponent } from './components/screens/screen-agregar-medico/screen-agregar-medico.component';
+import { ScreenPacienteParte2Component } from './components/screens/screen-paciente-parte2/screen-paciente-parte2.component';
 
 const routes: Routes = [
   {path: 'screen-home', component: ScreenHomeComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'screen-acerca-de-in', component: ScreenAcercaDeInComponent },
   { path: 'screen-paciente', component: ScreenPacienteComponent },
   { path: 'screen-habitaciones', component: ScreenHabitacionesComponent },
-  {path: 'screen-agregar-medico', component: ScreenAgregarMedicoComponent},
+  { path: 'screen-agregar-medico', component: ScreenAgregarMedicoComponent },
+  {path: 'screen-paciente-parte2', component: ScreenPacienteParte2Component},
   {path: '', redirectTo: '/screen-home', pathMatch: 'full'}
 ];
 

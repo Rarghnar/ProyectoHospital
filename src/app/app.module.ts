@@ -25,9 +25,13 @@ import { FormularioPacienteComponent } from './components/component/formulario-p
 import { CollapsibleInComponent } from './components/component/collapsible-in/collapsible-in.component';
 import { SectionComponent } from './components/component/section/section.component';
 import { NavbarAcercaDeComponent } from './components/navbar/navbar-acerca-de/navbar-acerca-de.component';
+
 //----------------------------------------------------------------------
 import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
 //-----------------------------------------------------------------------------------
+
+import { ScreenPacienteParte2Component } from './components/screens/screen-paciente-parte2/screen-paciente-parte2.component';
+import { FormularioPaciente2Component } from './components/component/formulario-paciente2/formulario-paciente2.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +56,9 @@ import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
     FormularioPacienteComponent,
     CollapsibleInComponent,
     SectionComponent,
-    NavbarAcercaDeComponent,    
+    NavbarAcercaDeComponent,
+    ScreenPacienteParte2Component,
+    FormularioPaciente2Component,    
   ],
   imports: [
     BrowserModule,
