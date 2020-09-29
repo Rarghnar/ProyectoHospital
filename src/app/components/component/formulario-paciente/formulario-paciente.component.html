@@ -1,104 +1,121 @@
-<form class="form-container" novalidate>
-    <div class="form-row">
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom01">Nombres</label>
-            <input type="text" class="form-control is-invaled" id="validationCustom01" value="" required>
-        </div>
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom02">Apellidos</label>
-            <input type="text" class="form-control" id="validationCustom02" value="" required>
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="validationCustom02">Rut</label>
-            <input type="text" class="form-control" id="validationCustom02" value="" required>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-2 mb-3 mr-4">
-            <label for="validationCustom03">Fecha de Nacimiento</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
-        <div class="col-md-2 mb-3 ml-4">
-            <label for="validationCustom06">Sexo</label>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Masculino</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                <label class="custom-control-label" for="customCheck2">Femenino</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck3">
-                <label class="custom-control-label" for="customCheck3">No no se indentifica</label>
-            </div>
-        </div>
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom05">Dirección</label>
-            <input type="text" class="form-control" id="validationCustom05" required>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-2 mb-3 mr-4">
-            <label for="validationCustom03">Nacionalidad</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
-        <div class="col-md-1 mb-3 ml-5">
-            <label for="validationCustom03">Edad</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" class="px-4 pt-3">
 
-        <div class="col-md-4 mb-3 ml-5" style="padding-left: 20px;">
-            <label for="validationCustom03">Ciudad</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-4 mb-3 mr-3">
-            <label for="validationCustom04">Ocupación</label>
-            <select class="custom-select" id="validationCustom04" required>
-                <option selected disabled value=""></option>
-                <option>Trabajador</option>
-                <option>Cesante</option>
-                <option>Jubilado</option>
-                <option>Estudiante</option>
-            </select>
-        </div>
-        <div class="col-md-4 mb-3 ml-4" style="padding-left: 10px;">
-            <label for="validationCustom03">Comuna</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2 mb-3 ml-4">
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck5">
-                <label class="custom-control-label" for="customCheck5">Solo Atender</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck4">
-                <label class="custom-control-label" for="customCheck4">Hospitalizar</label>
-            </div>
-        </div>
-    </div>
+    <h1>Agregar Nuevo Paciente</h1>
+    <div class="dropdown-divider  border-primary"></div>
 
-    <div class="form-row">
-        <div class="col-md-4 mb-3 ">
-            <label for="validationCustom03">Medico Quien lo Atiende</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
-        <div class="col-md-2 mb-3 mr-4">
-            <label for="validationCustom03">Fecha Ingreso</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="container-fluid">
+        <div id='formulario' [ngClass]="{lleno: mensaje}">
+            <div class="row my-4">
+
+                <div class="col-3">
+                    <label for="nombres">Nombres(*)</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <input id="nombres" name='nombres' class="form-control" type="test" formControlName="nombres" placeholder="Nombres">
+                        <div id='mensaje'>
+                            <small id="nombreoHelp" class="form-text text-muted" *ngIf="(nombres.dirty || nombres.touched) && nombres.invalid && nombres.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <label for="apellidos">Apellidos(*)</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <input id="apellidos" name='apellidos' class="form-control" type="test" formControlName="apellidos" placeholder="Apellidos">
+                        <div id='mensaje'>
+                            <small id="ApellidoHelp" class="form-text text-muted" *ngIf="(apellidos.dirty || apellidos.touched) && apellidos.invalid && apellidos.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <label for="rut">Rut(*)</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <input id="rut" name='rut' class="form-control" type="test" formControlName="rut" placeholder="Rut">
+                        <div id='mensaje'>
+                            <small id="rutHelp" class="form-text text-muted" *ngIf="(rut.dirty || rut.touched) && rut.invalid && rut.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row my-4">
+
+                <div class="col-2">
+                    <label for="fechaNac">Fecha de Nacimiento(*)</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <input id="fechaNac" name='fechaNac' class="form-control" type="test" formControlName="fechaNac" placeholder="00/00/0000">
+                        <div id='mensaje'>
+                            <small id="fechaNacHelp" class="form-text text-muted" *ngIf="(fechaNac.dirty || fechaNac.touched) && fechaNac.invalid && fechaNac.errors.required"> Requerido  </small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <label for="apellidos">Sexo(*)</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <input id="apellidos" name='apellidos' class="form-control" type="test" formControlName="apellidos" placeholder="Apellidos">
+                        <div id='mensaje'>
+                            <small id="ApellidoHelp" class="form-text text-muted" *ngIf="(apellidos.dirty || apellidos.touched) && apellidos.invalid && apellidos.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <label for="rut">Rut(*)</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <input id="rut" name='rut' class="form-control" type="test" formControlName="rut" placeholder="Rut">
+                        <div id='mensaje'>
+                            <small id="rutHelp" class="form-text text-muted" *ngIf="(rut.dirty || rut.touched) && rut.invalid && rut.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col">
+                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                <label class="form-check-label" for="dropdownCheck">
+                Recordarme
+            </label>
+            </div>
+
+            <button class="btn btn-primary mt-3" type="submit" [disabled]="!checkoutForm.valid">Agregar</button>
+
+            <div class="dropdown-divider  border-primary"></div>
+
+            <div class="row ml-2">
+                <div id='informacion'>
+                    <ul>
+                        <a class="dropdown-item" href="#">¿Has Olvidado Tu Contraseña?</a>
+                    </ul>
+                </div>
+            </div>
+            <div id='mensaje' [style.visibility]="isDivVisible ? 'visible' : 'hidden'" class="alert alert-success" role="alert">{{mensaje}}</div>
+
+
         </div>
     </div>
-    <div class="form-group">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-          Agree to terms and conditions
-        </label>
-        </div>
-    </div>
-    <button class="btn btn-primary" type="submit">Submit form</button>
 </form>

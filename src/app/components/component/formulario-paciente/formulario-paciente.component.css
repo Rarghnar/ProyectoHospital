@@ -1,4 +1,21 @@
-.form-container {
-  padding: 10px;
-  background: #c8e1e7;
+/*.form-container{
+    padding:10px;
+    background: rgb(200, 225, 231);
+}*/
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+.ng-touched {
+  background-color: #ffffff;
+}
+#mensaje {
+  clear: both;
+  width: 100%;
+}
+#mensaje .text-muted {
+  color: red !important;
+}
+.lleno {
+  visibility: hidden;
 }
