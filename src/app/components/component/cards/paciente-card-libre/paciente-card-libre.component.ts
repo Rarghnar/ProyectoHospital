@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Paciente } from '../../models/paciente.model';
 
 
@@ -12,9 +13,14 @@ export class PacienteCardLibreComponent implements OnInit {
   @Input()
   public paciente: Paciente;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+
+  navegarinfo( ){
+    this.router.navigate(["/screen-paciente"]);
+  }
+
 
 }

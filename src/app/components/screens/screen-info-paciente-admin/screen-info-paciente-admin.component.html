@@ -1,22 +1,15 @@
+
 <div class="background">
     <app-navbar-sesion-iniciada></app-navbar-sesion-iniciada>
     <div class="container-fluid mt-4">
-
         <div class="row">
-            <!--row-->
-            <div class="sideBarSesionIn col-lg-2 col-12 bd-sidebar mt-3">
-                <!--col sidebar-->
-                <app-collapsible-in-admin></app-collapsible-in-admin>
+            <div class="sideBarSesionIn col-lg-2 col-12 bd-sidebar my-3">
+                <app-collapsible-in></app-collapsible-in>
             </div>
-            <!--col sidebar-->
-            <main class="col-lg-7 col-12 mt-3">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card">
-
-                            </div>
-                        </div>
+            <main class="col-lg-7 col-12 my-3">
+                <div class="row mt-0">
+                    <div class="col-lg-4 col-12 " *ngFor="let paciente of pacientes">
+                        <app-paciente-card-full [paciente]="paciente"></app-paciente-card-full>
                     </div>
                 </div>
             </main>
@@ -24,7 +17,6 @@
                 <img alt="logo" src="assets/images/Imagen1.png" class="img-fluid">
             </div>
         </div>
-        <!--row-->
     </div>
     <app-section></app-section>
 </div>

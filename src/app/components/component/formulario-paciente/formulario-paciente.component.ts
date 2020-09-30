@@ -60,5 +60,6 @@ export class FormularioPacienteComponent implements OnInit {
   get edad() { return this.checkoutForm.get('edad');}
   get nacionalidad() { return this.checkoutForm.get('nacionalidad');}
   get ciudad() { return this.checkoutForm.get('ciudad');}
-  //get password() { return this.checkoutForm.get('password'); }
+  //get password() { return this.checkoutForm.get('password');}
+  
 }

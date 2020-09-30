@@ -47,6 +47,8 @@ import { ScreenInfoPacienteAdminComponent } from './components/screens/screen-in
 import { ListaPacienteComponent } from './components/component/lista-paciente/lista-paciente.component';
 import { ScreenPacienteParte3AdminComponent } from './components/screens/screen-paciente-parte3-admin/screen-paciente-parte3-admin.component';
 import { FormularioPaciente3Component } from './components/component/formulario-paciente3/formulario-paciente3.component';
+import { PacienteCardFullComponent } from './components/component/cards/paciente-card-full/paciente-card-full.component';
+import { PacienteCardNombreComponent } from './components/component/cards/paciente-card-nombre/paciente-card-nombre.component';
 
 
 @NgModule({
@@ -90,6 +92,8 @@ import { FormularioPaciente3Component } from './components/component/formulario-
     ListaPacienteComponent,
     ScreenPacienteParte3AdminComponent,
     FormularioPaciente3Component,
+    PacienteCardFullComponent,
+    PacienteCardNombreComponent,
   ],
   imports: [
     BrowserModule,
