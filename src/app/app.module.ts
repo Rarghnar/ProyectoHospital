@@ -32,6 +32,13 @@ import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
 
 import { ScreenPacienteParte2Component } from './components/screens/screen-paciente-parte2/screen-paciente-parte2.component';
 import { FormularioPaciente2Component } from './components/component/formulario-paciente2/formulario-paciente2.component';
+import { ScreenHomeAdminComponent } from './components/screens/screen-home-admin/screen-home-admin.component';
+import { CollapsibleInAdminComponent } from './components/component/collapsible-in-admin/collapsible-in-admin.component';
+import { RegistroMedicComponent } from './components/component/registrar/registro-medic/registro-medic.component';
+import { RegistroEnferComponent } from './components/component/registrar/registro-enfer/registro-enfer.component';
+import { ScreenRegistrarMedComponent } from './components/screens/screen-registrar-med/screen-registrar-med.component';
+import { ScreenRegistrarEnferComponent } from './components/screens/screen-registrar-enfer/screen-registrar-enfer.component';
+import { NavbarSesionAdminComponent } from './components/navbar/navbar-sesion-admin/navbar-sesion-admin.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +65,14 @@ import { FormularioPaciente2Component } from './components/component/formulario-
     SectionComponent,
     NavbarAcercaDeComponent,
     ScreenPacienteParte2Component,
-    FormularioPaciente2Component,    
+    FormularioPaciente2Component,
+    ScreenHomeAdminComponent,
+    CollapsibleInAdminComponent,
+    RegistroMedicComponent,
+    RegistroEnferComponent,
+    ScreenRegistrarMedComponent,
+    ScreenRegistrarEnferComponent,
+    NavbarSesionAdminComponent,    
   ],
   imports: [
     BrowserModule,

@@ -1,16 +1,8 @@
 form {
   text-align: center;
-  width: 100%;
 }
 form h1 {
   font-size: 20px;
-  text-align: center;
-}
-form input {
-  width: 30%;
-}
-form .ng-touched {
-  background-color: #ffffff;
 }
 form #mensaje {
   clear: both;
@@ -18,13 +10,6 @@ form #mensaje {
 }
 form #mensaje .text-muted {
   color: red !important;
-}
-form #informacion ul {
-  list-style-type: none;
-}
-form #informacion ul li {
-  float: left;
-  margin: 10px;
 }
 form .lleno {
   visibility: hidden;

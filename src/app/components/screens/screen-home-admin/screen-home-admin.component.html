@@ -1,0 +1,44 @@
+<div class="background">
+    <app-navbar-sesion-admin></app-navbar-sesion-admin>
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="sideBarSesionIn col-12 col-md-3 col-xl-2 bd-sidebar mt-3">
+                <app-collapsible-in-admin></app-collapsible-in-admin>
+            </div>
+            <main class="col-lg-8 col-12 ">
+
+                <div class="row">
+                    <div class="col-lg-8 col-12 my-3">
+                        <div class="card">
+                            <button type="button" class="btn btn-dark" (click)="navegarPaciente()">Ingresar Paciente</button>
+                            <img type="button" src="https://www.psychiatry.utoronto.ca/sites/default/files/impact-article-1-banner_2.jpg" alt="" class=" img-fluid " (click)="navegarPaciente()">
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-8 col-12 my-3">
+                        <div class="card">
+                            <button type="button" class="btn btn-dark" (click)="navegarHabitaciones()">Ver Habitación</button>
+                            <div class="imagen">
+                                <img type="button" src="https://www.psychiatry.utoronto.ca/sites/default/files/impact-article-1-banner_2.jpg" alt="" class=" img-fluid" (click)="navegarHabitaciones()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-12 my-3">
+                        <div class="card">
+                            <button type="button" class="btn btn-dark" (click)="navegarAgregarMedico()">Registrar Medico</button>
+                            <div class="imagen">
+                                <img type="button" src="https://www.psychiatry.utoronto.ca/sites/default/files/impact-article-1-banner_2.jpg" alt="" class=" img-fluid" (click)="navegarAgregarMedico()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <!--col sidebar-->
+
+    </div>
+    <app-section></app-section>
+</div>
