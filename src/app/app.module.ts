@@ -27,6 +27,10 @@ import { SectionComponent } from './components/component/section/section.compone
 import { NavbarAcercaDeComponent } from './components/navbar/navbar-acerca-de/navbar-acerca-de.component';
 //----------------------------------------------------------------------
 import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
+import { PacienteCardComponent } from './components/paciente-card/paciente-card.component';
+import { ScreenHabitacionesLibresComponent } from './components/screens/screen-habitaciones-libres/screen-habitaciones-libres.component';
+import { PacienteCardLibreComponent } from './components/paciente-card-libre/paciente-card-libre.component';
+
 //-----------------------------------------------------------------------------------
 
 @NgModule({
@@ -52,7 +56,11 @@ import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
     FormularioPacienteComponent,
     CollapsibleInComponent,
     SectionComponent,
-    NavbarAcercaDeComponent,    
+    NavbarAcercaDeComponent,
+    PacienteCardComponent,
+    ScreenHabitacionesLibresComponent,
+    PacienteCardLibreComponent,
+   
   ],
   imports: [
     BrowserModule,
