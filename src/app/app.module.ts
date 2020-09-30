@@ -26,7 +26,6 @@ import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
 //-----------------------------------------------------------------------------------
 
 import { ScreenPacienteParte2Component } from './components/screens/screen-paciente-parte2/screen-paciente-parte2.component';
-import { FormularioPaciente2Component } from './components/component/formulario-paciente2/formulario-paciente2.component';
 import { ScreenHomeAdminComponent } from './components/screens/screen-home-admin/screen-home-admin.component';
 import { CollapsibleInAdminComponent } from './components/component/collapsible-in-admin/collapsible-in-admin.component';
 import { RegistroMedicComponent } from './components/component/registrar/registro-medic/registro-medic.component';
@@ -39,7 +38,6 @@ import { PacienteCardLibreComponent } from './components/component/cards/pacient
 import { ScreenHabitacionesAdminComponent } from './components/screens/screen-habitaciones-admin/screen-habitaciones-admin.component';
 import { ScreenHabitacionesLibresAdminComponent } from './components/screens/screen-habitaciones-libres-admin/screen-habitaciones-libres-admin.component';
 import { ScreenPacienteAdminComponent } from './components/screens/screen-paciente-admin/screen-paciente-admin.component';
-import { ScreenPacienteParte2AdminComponent } from './components/screens/screen-paciente-parte2-admin/screen-paciente-parte2-admin.component';
 import { ScreenContactosAdminComponent } from './components/screens/screen-contactos-admin/screen-contactos-admin.component';
 import { ScreenAcercaDeAdminComponent } from './components/screens/screen-acerca-de-admin/screen-acerca-de-admin.component';
 import { ScreenListaPacientesComponent } from './components/screens/screen-lista-pacientes/screen-lista-pacientes.component';
@@ -71,7 +69,6 @@ import { FormularioPaciente3Component } from './components/component/formulario-
     CollapsibleInComponent,
     SectionComponent,
     ScreenPacienteParte2Component,
-    FormularioPaciente2Component,
     ScreenHomeAdminComponent,
     CollapsibleInAdminComponent,
     RegistroMedicComponent,
@@ -84,7 +81,6 @@ import { FormularioPaciente3Component } from './components/component/formulario-
     ScreenHabitacionesAdminComponent,
     ScreenHabitacionesLibresAdminComponent,
     ScreenPacienteAdminComponent,
-    ScreenPacienteParte2AdminComponent,
     ScreenContactosAdminComponent,
     ScreenAcercaDeAdminComponent,
     ScreenListaPacientesComponent,
