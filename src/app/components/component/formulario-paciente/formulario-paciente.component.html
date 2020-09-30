@@ -139,7 +139,14 @@
             </div>
             <!--row-->
             <!--boton agregar-->
-            <button class="btn btn-primary mt-3" (click)="navegarPaciente2()" type="submit" [disabled]="!checkoutForm.valid">Siguiente</button>
+            <div [ngSwitch]="getUrl()">
+                <div *ngSwitchCase="'/screen-paciente'">
+                    <button class="btn btn-primary mt-3" (click)="navegarPaciente2()" type="submit" [disabled]="!checkoutForm.valid">Siguiente</button>
+                </div>
+                <div *ngSwitchCase="'/screen-paciente-admin'">
+                    <button class="btn btn-primary mt-3" (click)="navegarPaciente2Admin()" type="submit" [disabled]="!checkoutForm.valid">Siguiente</button>
+                </div>
+            </div>
             <!--boton agregar-->
             <div id='mensaje' [style.visibility]="isDivVisible ? 'visible' : 'hidden'" class="alert alert-success" role="alert">{{mensaje}}</div>
         </div>

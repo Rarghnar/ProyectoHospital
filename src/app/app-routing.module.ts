@@ -18,6 +18,8 @@ import { ScreenHabitacionesLibresComponent } from './components/screens/screen-h
 import { ScreenHabitacionesAdminComponent } from './components/screens/screen-habitaciones-admin/screen-habitaciones-admin.component';
 import { ScreenHabitacionesLibresAdminComponent } from './components/screens/screen-habitaciones-libres-admin/screen-habitaciones-libres-admin.component';
 import { ScreenPacienteAdminComponent } from './components/screens/screen-paciente-admin/screen-paciente-admin.component';
+import { ScreenContactosAdminComponent } from './components/screens/screen-contactos-admin/screen-contactos-admin.component';
+import { ScreenAcercaDeAdminComponent } from './components/screens/screen-acerca-de-admin/screen-acerca-de-admin.component';
 
 const routes: Routes = [
   {path: 'screen-home', component: ScreenHomeComponent },
@@ -38,7 +40,9 @@ const routes: Routes = [
   { path: 'screen-habitaciones-admin', component: ScreenHabitacionesAdminComponent },
   { path: 'screen-habitaciones-libres-admin', component: ScreenHabitacionesLibresAdminComponent },
   { path: 'screen-paciente-admin', component: ScreenPacienteAdminComponent },
-  {path: 'screen-paciente-parte2-admin', component: ScreenPacienteParte2Component},
+  { path: 'screen-paciente-parte2-admin', component: ScreenPacienteParte2Component },
+  { path: 'screen-contactos-admin', component: ScreenContactosAdminComponent },
+  {path: 'screen-acerca-de-admin', component: ScreenAcercaDeAdminComponent},
   {path: '', redirectTo: '/screen-home', pathMatch: 'full'}
 ];
 

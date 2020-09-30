@@ -17,10 +17,19 @@ export class FormularioPacienteComponent implements OnInit {
     this.checkoutForm = this.createFormGroup();
   }
 
+  public getUrl() {
+    return this.router.url;
+  }
+
   ngOnInit(): void {
   }
+
   navegarPaciente2() {
     this.router.navigate(['/screen-paciente-parte2']);
+  }
+
+  navegarPaciente2Admin() {
+    this.router.navigate(['/screen-paciente-parte2-admin']);
   }
   createFormGroup() {
     return new FormGroup({

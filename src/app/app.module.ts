@@ -46,6 +46,8 @@ import { ScreenHabitacionesAdminComponent } from './components/screens/screen-ha
 import { ScreenHabitacionesLibresAdminComponent } from './components/screens/screen-habitaciones-libres-admin/screen-habitaciones-libres-admin.component';
 import { ScreenPacienteAdminComponent } from './components/screens/screen-paciente-admin/screen-paciente-admin.component';
 import { ScreenPacienteParte2AdminComponent } from './components/screens/screen-paciente-parte2-admin/screen-paciente-parte2-admin.component';
+import { ScreenContactosAdminComponent } from './components/screens/screen-contactos-admin/screen-contactos-admin.component';
+import { ScreenAcercaDeAdminComponent } from './components/screens/screen-acerca-de-admin/screen-acerca-de-admin.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +88,9 @@ import { ScreenPacienteParte2AdminComponent } from './components/screens/screen-
     ScreenHabitacionesAdminComponent,
     ScreenHabitacionesLibresAdminComponent,
     ScreenPacienteAdminComponent,
-    ScreenPacienteParte2AdminComponent,    
+    ScreenPacienteParte2AdminComponent,
+    ScreenContactosAdminComponent,
+    ScreenAcercaDeAdminComponent,    
   ],
   imports: [
     BrowserModule,
