@@ -29,7 +29,7 @@ export class FormularioPacienteComponent implements OnInit {
   }
 
   navegarPaciente2Admin() {
-    this.router.navigate(['/screen-paciente-parte2-admin']);
+    this.router.navigate(['/screen-paciente-parte3-admin']);
   }
   createFormGroup() {
     return new FormGroup({

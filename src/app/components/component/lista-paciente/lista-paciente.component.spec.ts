@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavbarSesionAdminComponent } from './navbar-sesion-admin.component';
+import { ListaPacienteComponent } from './lista-paciente.component';
 
-describe('NavbarSesionAdminComponent', () => {
-  let component: NavbarSesionAdminComponent;
-  let fixture: ComponentFixture<NavbarSesionAdminComponent>;
+describe('ListaPacienteComponent', () => {
+  let component: ListaPacienteComponent;
+  let fixture: ComponentFixture<ListaPacienteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavbarSesionAdminComponent ]
+      declarations: [ ListaPacienteComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NavbarSesionAdminComponent);
+    fixture = TestBed.createComponent(ListaPacienteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -9,7 +9,6 @@ import { ScreenContactosInComponent } from './components/screens/screen-contacto
 import { ScreenAcercaDeInComponent } from './components/screens/screen-acerca-de-in/screen-acerca-de-in.component';
 import { ScreenPacienteComponent } from './components/screens/screen-paciente/screen-paciente.component';
 import { ScreenHabitacionesComponent } from './components/screens/screen-habitaciones/screen-habitaciones.component';
-import { ScreenAgregarMedicoComponent } from './components/screens/screen-agregar-medico/screen-agregar-medico.component';
 import { ScreenPacienteParte2Component } from './components/screens/screen-paciente-parte2/screen-paciente-parte2.component';
 import { ScreenHomeAdminComponent } from './components/screens/screen-home-admin/screen-home-admin.component';
 import { ScreenRegistrarMedComponent } from './components/screens/screen-registrar-med/screen-registrar-med.component';
@@ -20,6 +19,11 @@ import { ScreenHabitacionesLibresAdminComponent } from './components/screens/scr
 import { ScreenPacienteAdminComponent } from './components/screens/screen-paciente-admin/screen-paciente-admin.component';
 import { ScreenContactosAdminComponent } from './components/screens/screen-contactos-admin/screen-contactos-admin.component';
 import { ScreenAcercaDeAdminComponent } from './components/screens/screen-acerca-de-admin/screen-acerca-de-admin.component';
+import { ScreenListaPacientesComponent } from './components/screens/screen-lista-pacientes/screen-lista-pacientes.component';
+import { ScreenListaPacientesAdminComponent } from './components/screens/screen-lista-pacientes-admin/screen-lista-pacientes-admin.component';
+import { ScreenInfoPacienteComponent } from './components/screens/screen-info-paciente/screen-info-paciente.component';
+import { ScreenInfoPacienteAdminComponent } from './components/screens/screen-info-paciente-admin/screen-info-paciente-admin.component';
+import { ScreenPacienteParte3AdminComponent } from './components/screens/screen-paciente-parte3-admin/screen-paciente-parte3-admin.component';
 
 const routes: Routes = [
   {path: 'screen-home', component: ScreenHomeComponent },
@@ -31,7 +35,6 @@ const routes: Routes = [
   { path: 'screen-acerca-de-in', component: ScreenAcercaDeInComponent },
   { path: 'screen-paciente', component: ScreenPacienteComponent },
   { path: 'screen-habitaciones', component: ScreenHabitacionesComponent },
-  { path: 'screen-agregar-medico', component: ScreenAgregarMedicoComponent },
   { path: 'screen-paciente-parte2', component: ScreenPacienteParte2Component },
   { path: 'screen-home-admin', component: ScreenHomeAdminComponent },
   { path: 'screen-registrar-med', component: ScreenRegistrarMedComponent },
@@ -42,7 +45,12 @@ const routes: Routes = [
   { path: 'screen-paciente-admin', component: ScreenPacienteAdminComponent },
   { path: 'screen-paciente-parte2-admin', component: ScreenPacienteParte2Component },
   { path: 'screen-contactos-admin', component: ScreenContactosAdminComponent },
-  {path: 'screen-acerca-de-admin', component: ScreenAcercaDeAdminComponent},
+  { path: 'screen-acerca-de-admin', component: ScreenAcercaDeAdminComponent },
+  { path: 'screen-lista-pacientes', component: ScreenListaPacientesComponent },
+  { path: 'screen-lista-pacientes-admin', component: ScreenListaPacientesAdminComponent },
+  { path: 'screem-info-paciente', component: ScreenInfoPacienteComponent },
+  { path: 'screen-info-paciente-admin', component: ScreenInfoPacienteAdminComponent },
+  {path: 'screen-paciente-parte3-admin', component: ScreenPacienteParte3AdminComponent},
   {path: '', redirectTo: '/screen-home', pathMatch: 'full'}
 ];
 
