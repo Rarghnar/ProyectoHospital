@@ -39,6 +39,13 @@ import { RegistroEnferComponent } from './components/component/registrar/registr
 import { ScreenRegistrarMedComponent } from './components/screens/screen-registrar-med/screen-registrar-med.component';
 import { ScreenRegistrarEnferComponent } from './components/screens/screen-registrar-enfer/screen-registrar-enfer.component';
 import { NavbarSesionAdminComponent } from './components/navbar/navbar-sesion-admin/navbar-sesion-admin.component';
+import { ScreenHabitacionesLibresComponent } from './components/screens/screen-habitaciones-libres/screen-habitaciones-libres.component';
+import { PacienteCardComponent } from './components/component/cards/paciente-card/paciente-card.component';
+import { PacienteCardLibreComponent } from './components/component/cards/paciente-card-libre/paciente-card-libre.component';
+import { ScreenHabitacionesAdminComponent } from './components/screens/screen-habitaciones-admin/screen-habitaciones-admin.component';
+import { ScreenHabitacionesLibresAdminComponent } from './components/screens/screen-habitaciones-libres-admin/screen-habitaciones-libres-admin.component';
+import { ScreenPacienteAdminComponent } from './components/screens/screen-paciente-admin/screen-paciente-admin.component';
+import { ScreenPacienteParte2AdminComponent } from './components/screens/screen-paciente-parte2-admin/screen-paciente-parte2-admin.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +79,14 @@ import { NavbarSesionAdminComponent } from './components/navbar/navbar-sesion-ad
     RegistroEnferComponent,
     ScreenRegistrarMedComponent,
     ScreenRegistrarEnferComponent,
-    NavbarSesionAdminComponent,    
+    NavbarSesionAdminComponent,
+    ScreenHabitacionesLibresComponent,
+    PacienteCardComponent,
+    PacienteCardLibreComponent,
+    ScreenHabitacionesAdminComponent,
+    ScreenHabitacionesLibresAdminComponent,
+    ScreenPacienteAdminComponent,
+    ScreenPacienteParte2AdminComponent,    
   ],
   imports: [
     BrowserModule,

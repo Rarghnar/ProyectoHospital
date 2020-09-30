@@ -1,33 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-//----------------------------
-import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Paciente } from '../../component/models/paciente.model';
 
 @Component({
-  selector: 'app-screen-habitaciones',
-  templateUrl: './screen-habitaciones.component.html',
-  styleUrls: ['./screen-habitaciones.component.less']
+  selector: 'app-screen-habitaciones-libres-admin',
+  templateUrl: './screen-habitaciones-libres-admin.component.html',
+  styleUrls: ['./screen-habitaciones-libres-admin.component.less']
 })
-export class ScreenHabitacionesComponent implements OnInit {
+export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
-  checkoutForm: FormGroup;
-  mensaje:string="";
-  isDivVisible = false;
-  
   public pacientes: Paciente[];
 
   constructor() { 
-    this.checkoutForm = this.createFormGroup();
+
     this.pacientes = [
       {
        // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
         nombre: 'Exequiel Rodrigo Andrade Rojas ',
         edad: '20',
         sintoma: 'Dolor de cuello y constantes dolores de cabeza',
-        color: 'red',
+        color: 'green',
         sexo: 'Masculino',
         rut: '20271557-5',
-        habitacion: '1-1',
+        habitacion: '3-3',
         medicoEncargado: 'Doctora Patricia Alvarez',
         ultimoChequeo:'29 de septiembre, 12:20hrs',
         chequeadoPor:'Enferma Catalina Riquelme'
@@ -39,10 +33,10 @@ export class ScreenHabitacionesComponent implements OnInit {
         nombre: 'Sebastian Antonio marti Cabrera ',
         edad: '22',
         sintoma: 'Fractura de pierna grave',
-        color: 'red',
+        color: 'green',
         sexo: 'Femenino',
         rut: '19823772.1',
-        habitacion: '1-2',
+        habitacion: '3-4',
         medicoEncargado: 'Doctora Patricia Alvarez',
 
         ultimoChequeo:'28 de septiembre, 17:15hrs',
@@ -54,10 +48,10 @@ export class ScreenHabitacionesComponent implements OnInit {
          nombre: 'Sebastian Antonio marti Cabrera ',
          edad: '22',
          sintoma: 'ajsdjsjdajsdjasjdjasdjasjd',
-         color: 'red',
+         color: 'green',
          sexo: 'Femenino',
          rut: '19823772.1',
-         habitacion: '1-3',
+         habitacion: '3-5',
          medicoEncargado: 'Doctora Patricia Alvarez',
 
          ultimoChequeo:'28 de septiembre, 17:15hrs',
@@ -69,10 +63,10 @@ export class ScreenHabitacionesComponent implements OnInit {
          nombre: 'Sebastian Antonio marti Cabrera ',
          edad: '22',
          sintoma: 'malardo maximodsdasdasdads ',
-         color: 'red',
+         color: 'green',
          sexo: 'Femenino',
          rut: '19823772.1',
-         habitacion: '1-4',
+         habitacion: '3-6',
          medicoEncargado: 'Doctora Patricia Alvarez',
 
          ultimoChequeo:'28 de septiembre, 17:15hrs',
@@ -84,10 +78,10 @@ export class ScreenHabitacionesComponent implements OnInit {
          nombre: 'Sebastian Antonio marti Cabrera ',
          edad: '22',
          sintoma: 'malardo maximodsadsdasdasdas ',
-         color: 'red',
+         color: 'green',
          sexo: 'Femenino',
          rut: '19823772.1',
-         habitacion: '1-5',
+         habitacion: '3-7',
          medicoEncargado: 'Doctora Patricia Alvarez',
 
          ultimoChequeo:'28 de septiembre, 17:15hrs',
@@ -100,10 +94,10 @@ export class ScreenHabitacionesComponent implements OnInit {
           nombre: 'Anibal Escalante Verdura Antonia',
           edad: '22',
           sintoma: 'Muy Nashe, otro nashe nashe jajaj',
-          color: 'red',
+          color: 'green',
           sexo: 'Femenino',
           rut: '87.212.212.7',
-          habitacion: '1-6',
+          habitacion: '3-8',
           medicoEncargado: 'Doctora Patricia Alvarez',
 
           ultimoChequeo:'23 de septiembre, 17:15hrs',
@@ -115,10 +109,10 @@ export class ScreenHabitacionesComponent implements OnInit {
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
            sintoma: 'Dolor de cuello y constantes dolores de cabeza',
-           color: 'red',
+           color: 'green',
            sexo: 'Masculino',
            rut: '20271557-5',
-           habitacion: '1-7',
+           habitacion: '4-1',
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
@@ -129,10 +123,10 @@ export class ScreenHabitacionesComponent implements OnInit {
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
            sintoma: 'Dolor de cuello y constantes dolores de cabeza',
-           color: 'red',
+           color: 'green',
            sexo: 'Masculino',
            rut: '20271557-5',
-           habitacion: '1-8',
+           habitacion: '4-2',
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
@@ -143,10 +137,10 @@ export class ScreenHabitacionesComponent implements OnInit {
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
            sintoma: 'Dolor de cuello y constantes dolores de cabeza',
-           color: 'red',
+           color: 'green',
            sexo: 'Masculino',
            rut: '20271557-5',
-           habitacion: '2-1',
+           habitacion: '4-3',
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
@@ -157,10 +151,10 @@ export class ScreenHabitacionesComponent implements OnInit {
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
            sintoma: 'Dolor de cuello y constantes dolores de cabeza',
-           color: 'red',
+           color: 'green',
            sexo: 'Masculino',
            rut: '20271557-5',
-           habitacion: '2-2',
+           habitacion: '4-4',
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
@@ -171,10 +165,10 @@ export class ScreenHabitacionesComponent implements OnInit {
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
            sintoma: 'Dolor de cuello y constantes dolores de cabeza',
-           color: 'red',
+           color: 'green',
            sexo: 'Masculino',
            rut: '20271557-5',
-           habitacion: '2-3',
+           habitacion: '4-4',
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
@@ -185,10 +179,10 @@ export class ScreenHabitacionesComponent implements OnInit {
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
            sintoma: 'Dolor de cuello y constantes dolores de cabeza',
-           color: 'red',
+           color: 'green',
            sexo: 'Masculino',
            rut: '20271557-5',
-           habitacion: '2-4',
+           habitacion: '4-5',
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
@@ -199,10 +193,10 @@ export class ScreenHabitacionesComponent implements OnInit {
            nombre: 'Sebastian Antonio marti Cabrera ',
            edad: '22',
            sintoma: 'Fractura de pierna grave',
-           color: 'red',
+           color: 'green',
            sexo: 'Femenino',
            rut: '19823772.1',
-           habitacion: '2-5',
+           habitacion: '4-6',
            medicoEncargado: 'Doctora Patricia Alvarez',
 
            ultimoChequeo:'28 de septiembre, 17:15hrs',
@@ -214,10 +208,10 @@ export class ScreenHabitacionesComponent implements OnInit {
            nombre: 'Sebastian Antonio marti Cabrera ',
            edad: '22',
            sintoma: 'Fractura de pierna grave',
-           color: 'red',
+           color: 'green',
            sexo: 'Femenino',
            rut: '19823772.1',
-           habitacion: '3-1',
+           habitacion: '4-7',
            medicoEncargado: 'Doctora Patricia Alvarez',
 
            ultimoChequeo:'28 de septiembre, 17:15hrs',
@@ -229,10 +223,10 @@ export class ScreenHabitacionesComponent implements OnInit {
            nombre: 'Sebastian Antonio marti Cabrera ',
            edad: '22',
            sintoma: 'Fractura de pierna grave',
-           color: 'red',
+           color: 'green',
            sexo: 'Femenino',
            rut: '19823772.1',
-           habitacion: '3-2',
+           habitacion: '4-8',
            medicoEncargado: 'Doctora Patricia Alvarez',
 
            ultimoChequeo:'28 de septiembre, 17:15hrs',
@@ -241,23 +235,9 @@ export class ScreenHabitacionesComponent implements OnInit {
          },
 
       ]
-  }
 
+  }
   ngOnInit(): void {
   }
 
-  createFormGroup() {
-    return new FormGroup({
-      usuario: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$")]),
-      password: new FormControl('',[Validators.required])
-    });
-  }
-
-  onSubmit(){
-    this.mensaje="datos completados";
-    this.isDivVisible=true;
-  }
-
-  get usuario() { return this.checkoutForm.get('usuario'); }
-  get password() { return this.checkoutForm.get('password'); }
 }

@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-//----------------------------
 import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Paciente } from '../../component/models/paciente.model';
 
 @Component({
-  selector: 'app-screen-habitaciones',
-  templateUrl: './screen-habitaciones.component.html',
-  styleUrls: ['./screen-habitaciones.component.less']
+  selector: 'app-screen-habitaciones-admin',
+  templateUrl: './screen-habitaciones-admin.component.html',
+  styleUrls: ['./screen-habitaciones-admin.component.less']
 })
-export class ScreenHabitacionesComponent implements OnInit {
+export class ScreenHabitacionesAdminComponent implements OnInit {
 
   checkoutForm: FormGroup;
   mensaje:string="";
@@ -260,4 +259,5 @@ export class ScreenHabitacionesComponent implements OnInit {
 
   get usuario() { return this.checkoutForm.get('usuario'); }
   get password() { return this.checkoutForm.get('password'); }
+
 }

@@ -14,6 +14,10 @@ import { ScreenPacienteParte2Component } from './components/screens/screen-pacie
 import { ScreenHomeAdminComponent } from './components/screens/screen-home-admin/screen-home-admin.component';
 import { ScreenRegistrarMedComponent } from './components/screens/screen-registrar-med/screen-registrar-med.component';
 import { ScreenRegistrarEnferComponent } from './components/screens/screen-registrar-enfer/screen-registrar-enfer.component';
+import { ScreenHabitacionesLibresComponent } from './components/screens/screen-habitaciones-libres/screen-habitaciones-libres.component';
+import { ScreenHabitacionesAdminComponent } from './components/screens/screen-habitaciones-admin/screen-habitaciones-admin.component';
+import { ScreenHabitacionesLibresAdminComponent } from './components/screens/screen-habitaciones-libres-admin/screen-habitaciones-libres-admin.component';
+import { ScreenPacienteAdminComponent } from './components/screens/screen-paciente-admin/screen-paciente-admin.component';
 
 const routes: Routes = [
   {path: 'screen-home', component: ScreenHomeComponent },
@@ -29,7 +33,12 @@ const routes: Routes = [
   { path: 'screen-paciente-parte2', component: ScreenPacienteParte2Component },
   { path: 'screen-home-admin', component: ScreenHomeAdminComponent },
   { path: 'screen-registrar-med', component: ScreenRegistrarMedComponent },
-  {path: 'screen-registrar-enfer', component: ScreenRegistrarEnferComponent},
+  { path: 'screen-registrar-enfer', component: ScreenRegistrarEnferComponent },
+  { path: 'screen-habitaciones-libres', component: ScreenHabitacionesLibresComponent },
+  { path: 'screen-habitaciones-admin', component: ScreenHabitacionesAdminComponent },
+  { path: 'screen-habitaciones-libres-admin', component: ScreenHabitacionesLibresAdminComponent },
+  { path: 'screen-paciente-admin', component: ScreenPacienteAdminComponent },
+  {path: 'screen-paciente-parte2-admin', component: ScreenPacienteParte2Component},
   {path: '', redirectTo: '/screen-home', pathMatch: 'full'}
 ];
 

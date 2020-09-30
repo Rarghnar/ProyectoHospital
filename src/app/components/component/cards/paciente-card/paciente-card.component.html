@@ -1,0 +1,48 @@
+<div class="card mb-2">
+    <!-- <img src="{{paciente.imgURL}}" class="card-img-top" alt="...">  -->
+    <div class="card-body mb-1">
+        <div class="row ">
+            <div class="col-lg-12 col-12 text-left">
+
+
+                <!-- <p class="font-weight-bold">Codigo de cama: {{paciente.habitacion}}</p>
+           <p class="text mb-1">Nombre: {{paciente.nombre}}</p>
+           <p class="text mb-1">Rut: {{paciente.rut}}</p>
+           <p class="text mb-1">Edad: {{paciente.edad}}</p>
+           <p class="text mb-1">Sexo: {{paciente.sexo}}</p>
+           <p class="text mb-1">Sintoma/s: {{paciente.sintoma}}</p>
+           
+           <p class="text mb-1">Medico Encargado: {{paciente.medicoEncargado}}</p>
+           <p class="text mb-1">Ultimo Chequeo: {{paciente.ultimoChequeo}}</p>
+           <p class="text mb-5">Chequeado Por: {{paciente.chequeadoPor}}</p> -->
+
+
+                <div [ngSwitch]="paciente.color">
+
+                    <div *ngSwitchCase="'red'">
+
+                        <p class="font-weight-bold"> Codigo de cama: {{paciente.habitacion}}</p>
+                        <p class="text mb-1"> <span class="font-weight-bold">Nombre: </span> {{paciente.nombre}}</p>
+                        <p class="text mb-1"><span class="font-weight-bold">Rut:</span> {{paciente.rut}}</p>
+                        <!-- <p class="text mb-1">Edad: {{paciente.edad}}</p>
+                 <p class="text mb-1">Sexo: {{paciente.sexo}}</p> 
+                 <p class="text mb-1">Sintoma/s: {{paciente.sintoma}}</p> -->
+
+                        <p class="text mb-1"><span class="font-weight-bold">Medico Encargado:</span> {{paciente.medicoEncargado}}</p>
+                        <p class="text mb-1"><span class="font-weight-bold">Ultimo Chequeo:</span> {{paciente.ultimoChequeo}}</p>
+                        <p class="text mb-5"><span class="font-weight-bold">Chequeado Por:</span> {{paciente.chequeadoPor}}</p>
+                        <i class="fas fa-circle" style="color: red"></i>
+                        <p class="text mb-1"> <span class="font-weight-bold">Cama ocupada</span> </p>
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <button type="button" class="btn btn-success m-2">Realizar chequeo</button>
+                            <button type="button" class="btn btn-success m-2">Retirar paciente</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
