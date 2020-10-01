@@ -1,46 +1,34 @@
 <div class="background">
     <app-navbar-sesion-iniciada></app-navbar-sesion-iniciada>
     <div class="container-fluid mt-4">
-
         <div class="row">
-            <div class="sideBarSesionIn col-12 col-md-3 col-xl-2 bd-sidebar">
+            <div class="sideBarSesionIn col-lg-2 col-12 bd-sidebar my-3">
                 <app-collapsible-in></app-collapsible-in>
             </div>
-
-            <div class="col-10">
-                <div class="col-10">
-                    <div class="imageHome card-body">
-                        <div class="card-body">
+            <main class="col-lg-7 col-12">
+                <div class="row">
+                    <div class="col-lg-10 col-12 my-3">
+                        <div class="card">
                             <button type="button" class="btn btn-dark" (click)="navegarPaciente()">Ingresar Paciente</button>
-                            <div class="imagen">
-                                <img type="button" src="https://www.psychiatry.utoronto.ca/sites/default/files/impact-article-1-banner_2.jpg" alt="" class="center" (click)="navegarPaciente()">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <div class="imageHome card-body">
-                        <div class="card-body">
-                            <button type="button" class="btn btn-dark" (click)="navegarHabitaciones()">Ver Habitaciones</button>
-                            <div class="imagen">
-                                <img type="button" src="https://www.psychiatry.utoronto.ca/sites/default/files/impact-article-1-banner_2.jpg" alt="" class="center" (click)="navegarHabitaciones()">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <div class="imageHome card-body">
-                        <div class="card-body">
-                            <button type="button" class="btn btn-dark" (click)="navegarAgregarMedico()">Ingresar Paciente</button>
-                            <div class="imagen">
-                                <img type="button" src="https://www.psychiatry.utoronto.ca/sites/default/files/impact-article-1-banner_2.jpg" alt="" class="center" (click)="navegarAgregarMedico()">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            <img type="button" src="https://www.psychiatry.utoronto.ca/sites/default/files/impact-article-1-banner_2.jpg" alt="" class=" img-fluid " (click)="navegarPaciente()">
 
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-12 my-3">
+                        <div class="card">
+                            <button type="button" class="btn btn-dark" (click)="navegarHabitaciones()">Ver Camas</button>
+                            <div class="imagen">
+                                <img type="button" src="https://www.psychiatry.utoronto.ca/sites/default/files/impact-article-1-banner_2.jpg" alt="" class=" img-fluid" (click)="navegarHabitaciones()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="col-lg-3 col-12 my-5">
+                <img alt="logo" src="assets/images/Imagen1.png" class="img-fluid">
             </div>
         </div>
+        <!--col sidebar-->
     </div>
     <app-section></app-section>
 </div>

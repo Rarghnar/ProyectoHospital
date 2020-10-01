@@ -22,8 +22,8 @@ export class CuadroInicioSesionAdmComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navegarInicio(){
-    this.router.navigate(['/screen-home-ingresado']);
+  navegarInicioAdm(){
+    this.router.navigate(['/screen-home-admin']);
   }
 
   createFormGroup() {

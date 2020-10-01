@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Paciente } from 'src/app/models/paciente.model';
-//----------------------------
-import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { Route } from '@angular/compiler/src/core';
+import { Paciente } from '../../component/models/paciente.model';
 
 @Component({
   selector: 'app-screen-habitaciones-libres',
@@ -11,16 +8,9 @@ import { Route } from '@angular/compiler/src/core';
 })
 export class ScreenHabitacionesLibresComponent implements OnInit {
 
-  checkoutForm: FormGroup;
-  mensaje:string="";
-  isDivVisible=false;
-
-
   public pacientes: Paciente[];
 
   constructor() { 
-    this.checkoutForm = this.createFormGroup();
-
 
     this.pacientes = [
       {
@@ -35,9 +25,9 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
         medicoEncargado: 'Doctora Patricia Alvarez',
         ultimoChequeo:'29 de septiembre, 12:20hrs',
         chequeadoPor:'Enferma Catalina Riquelme'
-  
+
       },
-  
+
       {
        // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
         nombre: 'Sebastian Antonio marti Cabrera ',
@@ -48,10 +38,10 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
         rut: '19823772.1',
         habitacion: '3-4',
         medicoEncargado: 'Doctora Patricia Alvarez',
-      
+
         ultimoChequeo:'28 de septiembre, 17:15hrs',
         chequeadoPor:'Enferma Catalina Riquelme'
-  
+
       },
       {
         // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -63,10 +53,10 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
          rut: '19823772.1',
          habitacion: '3-5',
          medicoEncargado: 'Doctora Patricia Alvarez',
-       
+
          ultimoChequeo:'28 de septiembre, 17:15hrs',
          chequeadoPor:'Enferma Catalina Riquelme'
-   
+
        },
        {
         // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -78,10 +68,10 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
          rut: '19823772.1',
          habitacion: '3-6',
          medicoEncargado: 'Doctora Patricia Alvarez',
-       
+
          ultimoChequeo:'28 de septiembre, 17:15hrs',
          chequeadoPor:'Enferma Catalina Riquelme'
-   
+
        },
        {
         // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -93,10 +83,10 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
          rut: '19823772.1',
          habitacion: '3-7',
          medicoEncargado: 'Doctora Patricia Alvarez',
-       
+
          ultimoChequeo:'28 de septiembre, 17:15hrs',
          chequeadoPor:'Enferma Catalina Riquelme'
-   
+
        },
 
       {
@@ -109,10 +99,10 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
           rut: '87.212.212.7',
           habitacion: '3-8',
           medicoEncargado: 'Doctora Patricia Alvarez',
-        
+
           ultimoChequeo:'23 de septiembre, 17:15hrs',
           chequeadoPor:'Enferma Catalina Riquelme'
-    
+
         },
         {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -126,7 +116,6 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
-     
          },
          {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -140,7 +129,6 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
-     
          },
          {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -154,7 +142,6 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
-     
          },
          {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -168,7 +155,6 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
-     
          },
          {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -182,7 +168,6 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
-     
          },
          {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -196,7 +181,6 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
-     
          },
          {
           // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -208,10 +192,10 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
            rut: '19823772.1',
            habitacion: '4-6',
            medicoEncargado: 'Doctora Patricia Alvarez',
-         
+
            ultimoChequeo:'28 de septiembre, 17:15hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
-     
+
          }, 
          {
           // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -223,10 +207,10 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
            rut: '19823772.1',
            habitacion: '4-7',
            medicoEncargado: 'Doctora Patricia Alvarez',
-         
+
            ultimoChequeo:'28 de septiembre, 17:15hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
-     
+
          },
          {
           // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -238,31 +222,16 @@ export class ScreenHabitacionesLibresComponent implements OnInit {
            rut: '19823772.1',
            habitacion: '4-8',
            medicoEncargado: 'Doctora Patricia Alvarez',
-         
+
            ultimoChequeo:'28 de septiembre, 17:15hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
-     
+
          },
-  
+
       ]
 
   }
-
   ngOnInit(): void {
   }
 
-  createFormGroup() {
-    return new FormGroup({
-      usuario: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$")]),
-      password: new FormControl('',[Validators.required])
-    });
-  }
-
-  onSubmit(){
-    this.mensaje="datos completados";
-    this.isDivVisible=true;
-  }
-
-  get usuario() { return this.checkoutForm.get('usuario'); }
-  get password() { return this.checkoutForm.get('password'); }
 }

@@ -1,9 +1,6 @@
 .background {
-  max-width: 1600px;
-  max-height: 350px;
-  padding-left: 45px;
-  padding-right: 45px;
-  padding-top: 20px;
-  padding-bottom: 50px;
   background-color: #9c9b9b;
+}
+.img-fluid {
+  width: 30%;
 }

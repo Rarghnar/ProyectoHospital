@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Paciente } from 'src/app/models/paciente.model';
 //----------------------------
 import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { Paciente } from '../../component/models/paciente.model';
 
 @Component({
   selector: 'app-screen-habitaciones',
@@ -12,14 +13,15 @@ export class ScreenHabitacionesComponent implements OnInit {
 
   checkoutForm: FormGroup;
   mensaje:string="";
-  isDivVisible=false;
+  isDivVisible = false;
+  
+  public pacientes: Paciente[];
 
 
   public pacientes: Paciente[];
 
   constructor() { 
     this.checkoutForm = this.createFormGroup();
-
     this.pacientes = [
       {
        // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -33,9 +35,15 @@ export class ScreenHabitacionesComponent implements OnInit {
         medicoEncargado: 'Doctora Patricia Alvarez',
         ultimoChequeo:'29 de septiembre, 12:20hrs',
         chequeadoPor:'Enferma Catalina Riquelme'
+<<<<<<< HEAD
   
       },
   
+=======
+
+      },
+
+>>>>>>> dev
       {
        // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
         nombre: 'Sebastian Antonio marti Cabrera ',
@@ -46,10 +54,17 @@ export class ScreenHabitacionesComponent implements OnInit {
         rut: '19823772.1',
         habitacion: '1-2',
         medicoEncargado: 'Doctora Patricia Alvarez',
+<<<<<<< HEAD
       
         ultimoChequeo:'28 de septiembre, 17:15hrs',
         chequeadoPor:'Enferma Catalina Riquelme'
   
+=======
+
+        ultimoChequeo:'28 de septiembre, 17:15hrs',
+        chequeadoPor:'Enferma Catalina Riquelme'
+
+>>>>>>> dev
       },
       {
         // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -61,10 +76,17 @@ export class ScreenHabitacionesComponent implements OnInit {
          rut: '19823772.1',
          habitacion: '1-3',
          medicoEncargado: 'Doctora Patricia Alvarez',
+<<<<<<< HEAD
        
          ultimoChequeo:'28 de septiembre, 17:15hrs',
          chequeadoPor:'Enferma Catalina Riquelme'
    
+=======
+
+         ultimoChequeo:'28 de septiembre, 17:15hrs',
+         chequeadoPor:'Enferma Catalina Riquelme'
+
+>>>>>>> dev
        },
        {
         // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -76,10 +98,17 @@ export class ScreenHabitacionesComponent implements OnInit {
          rut: '19823772.1',
          habitacion: '1-4',
          medicoEncargado: 'Doctora Patricia Alvarez',
+<<<<<<< HEAD
        
          ultimoChequeo:'28 de septiembre, 17:15hrs',
          chequeadoPor:'Enferma Catalina Riquelme'
    
+=======
+
+         ultimoChequeo:'28 de septiembre, 17:15hrs',
+         chequeadoPor:'Enferma Catalina Riquelme'
+
+>>>>>>> dev
        },
        {
         // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -91,10 +120,17 @@ export class ScreenHabitacionesComponent implements OnInit {
          rut: '19823772.1',
          habitacion: '1-5',
          medicoEncargado: 'Doctora Patricia Alvarez',
+<<<<<<< HEAD
        
          ultimoChequeo:'28 de septiembre, 17:15hrs',
          chequeadoPor:'Enferma Catalina Riquelme'
    
+=======
+
+         ultimoChequeo:'28 de septiembre, 17:15hrs',
+         chequeadoPor:'Enferma Catalina Riquelme'
+
+>>>>>>> dev
        },
 
       {
@@ -107,10 +143,17 @@ export class ScreenHabitacionesComponent implements OnInit {
           rut: '87.212.212.7',
           habitacion: '1-6',
           medicoEncargado: 'Doctora Patricia Alvarez',
+<<<<<<< HEAD
         
           ultimoChequeo:'23 de septiembre, 17:15hrs',
           chequeadoPor:'Enferma Catalina Riquelme'
     
+=======
+
+          ultimoChequeo:'23 de septiembre, 17:15hrs',
+          chequeadoPor:'Enferma Catalina Riquelme'
+
+>>>>>>> dev
         },
         {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -124,7 +167,11 @@ export class ScreenHabitacionesComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
+<<<<<<< HEAD
      
+=======
+
+>>>>>>> dev
          },
          {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -138,7 +185,11 @@ export class ScreenHabitacionesComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
+<<<<<<< HEAD
      
+=======
+
+>>>>>>> dev
          },
          {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -152,7 +203,11 @@ export class ScreenHabitacionesComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
+<<<<<<< HEAD
      
+=======
+
+>>>>>>> dev
          },
          {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -166,7 +221,11 @@ export class ScreenHabitacionesComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
+<<<<<<< HEAD
      
+=======
+
+>>>>>>> dev
          },
          {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -180,7 +239,11 @@ export class ScreenHabitacionesComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
+<<<<<<< HEAD
      
+=======
+
+>>>>>>> dev
          },
          {
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
@@ -194,7 +257,11 @@ export class ScreenHabitacionesComponent implements OnInit {
            medicoEncargado: 'Doctora Patricia Alvarez',
            ultimoChequeo:'29 de septiembre, 12:20hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
+<<<<<<< HEAD
      
+=======
+
+>>>>>>> dev
          },
          {
           // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -206,10 +273,17 @@ export class ScreenHabitacionesComponent implements OnInit {
            rut: '19823772.1',
            habitacion: '2-5',
            medicoEncargado: 'Doctora Patricia Alvarez',
+<<<<<<< HEAD
          
            ultimoChequeo:'28 de septiembre, 17:15hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
      
+=======
+
+           ultimoChequeo:'28 de septiembre, 17:15hrs',
+           chequeadoPor:'Enferma Catalina Riquelme'
+
+>>>>>>> dev
          }, 
          {
           // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -221,10 +295,17 @@ export class ScreenHabitacionesComponent implements OnInit {
            rut: '19823772.1',
            habitacion: '3-1',
            medicoEncargado: 'Doctora Patricia Alvarez',
+<<<<<<< HEAD
          
            ultimoChequeo:'28 de septiembre, 17:15hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
      
+=======
+
+           ultimoChequeo:'28 de septiembre, 17:15hrs',
+           chequeadoPor:'Enferma Catalina Riquelme'
+
+>>>>>>> dev
          },
          {
           // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
@@ -236,6 +317,7 @@ export class ScreenHabitacionesComponent implements OnInit {
            rut: '19823772.1',
            habitacion: '3-2',
            medicoEncargado: 'Doctora Patricia Alvarez',
+<<<<<<< HEAD
          
            ultimoChequeo:'28 de septiembre, 17:15hrs',
            chequeadoPor:'Enferma Catalina Riquelme'
@@ -244,6 +326,15 @@ export class ScreenHabitacionesComponent implements OnInit {
   
       ]
 
+=======
+
+           ultimoChequeo:'28 de septiembre, 17:15hrs',
+           chequeadoPor:'Enferma Catalina Riquelme'
+
+         },
+
+      ]
+>>>>>>> dev
   }
 
   ngOnInit(): void {

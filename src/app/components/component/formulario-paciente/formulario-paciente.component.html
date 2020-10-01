@@ -1,104 +1,154 @@
-<form class="form-container" novalidate>
-    <div class="form-row">
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom01">Nombres</label>
-            <input type="text" class="form-control is-invaled" id="validationCustom01" value="" required>
-        </div>
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom02">Apellidos</label>
-            <input type="text" class="form-control" id="validationCustom02" value="" required>
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="validationCustom02">Rut</label>
-            <input type="text" class="form-control" id="validationCustom02" value="" required>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-2 mb-3 mr-4">
-            <label for="validationCustom03">Fecha de Nacimiento</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
-        <div class="col-md-2 mb-3 ml-4">
-            <label for="validationCustom06">Sexo</label>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Masculino</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                <label class="custom-control-label" for="customCheck2">Femenino</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck3">
-                <label class="custom-control-label" for="customCheck3">No no se indentifica</label>
-            </div>
-        </div>
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom05">Dirección</label>
-            <input type="text" class="form-control" id="validationCustom05" required>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-2 mb-3 mr-4">
-            <label for="validationCustom03">Nacionalidad</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
-        <div class="col-md-1 mb-3 ml-5">
-            <label for="validationCustom03">Edad</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" class="px-4 pt-3">
 
-        <div class="col-md-4 mb-3 ml-5" style="padding-left: 20px;">
-            <label for="validationCustom03">Ciudad</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-4 mb-3 mr-3">
-            <label for="validationCustom04">Ocupación</label>
-            <select class="custom-select" id="validationCustom04" required>
-                <option selected disabled value=""></option>
-                <option>Trabajador</option>
-                <option>Cesante</option>
-                <option>Jubilado</option>
-                <option>Estudiante</option>
-            </select>
-        </div>
-        <div class="col-md-4 mb-3 ml-4" style="padding-left: 10px;">
-            <label for="validationCustom03">Comuna</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2 mb-3 ml-4">
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck5">
-                <label class="custom-control-label" for="customCheck5">Solo Atender</label>
+    <h1>Agregar Nuevo Paciente</h1>
+    <div class="dropdown-divider  border-secundary"></div>
+    <div class="container-fluid">
+        <!--container-->
+        <div id='formulario' [ngClass]="{lleno: mensaje}">
+            <div class="row my-4">
+                <!--row-->
+                <div class="col-lg-3 col-12 my-2">
+                    <!--col nombre-->
+                    <label for="nombres">Nombres(*)</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input id="nombres" name='nombres' class="form-control" type="text" formControlName="nombres" placeholder="Nombres">
+                        <div id='mensaje'>
+                            <small id="nombreoHelp" class="form-text text-muted" *ngIf="(nombres.dirty || nombres.touched) && nombres.invalid && nombres.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+                <!--col nombre-->
+                <div class="col-lg-3 col-12 my-2">
+                    <!--col apellido-->
+                    <label for="apellidos">Apellidos(*)</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input id="apellidos" name='apellidos' class="form-control" type="text" formControlName="apellidos" placeholder="Apellidos">
+                        <div id='mensaje'>
+                            <small id="ApellidoHelp" class="form-text text-muted" *ngIf="(apellidos.dirty || apellidos.touched) && apellidos.invalid && apellidos.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+                <!--col apellido-->
+                <div class="col-lg-3 col-12 my-2">
+                    <!--col rut-->
+                    <label for="rut">Rut(*)</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input id="rut" name='rut' class="form-control" type="text" formControlName="rut" placeholder="Rut">
+                        <div id='mensaje'>
+                            <small id="rutHelp" class="form-text text-muted" *ngIf="(rut.dirty || rut.touched) && rut.invalid && rut.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+                <!--col rut-->
             </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck4">
-                <label class="custom-control-label" for="customCheck4">Hospitalizar</label>
+            <!--row-->
+            <div class="row my-4">
+                <!--row-->
+                <div class="col-lg-3 col-12 my-2">
+                    <!--col fecha Nac-->
+                    <label for="fechaNac">Fecha de Nacimiento(*)</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input id="fechaNac" name='fechaNac' class="form-control" type="text" formControlName="fechaNac" placeholder="00/00/0000">
+                        <div id='mensaje'>
+                            <small id="fechaNacHelp" class="form-text text-muted" *ngIf="(fechaNac.dirty || fechaNac.touched) && fechaNac.invalid && fechaNac.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+                <!--col fecha Nac-->
+                <div class="col-lg-2 col-12 my-2">
+                    <!--col sexo-->
+                    <label for="sexo">Sexo(*)</label>
+                    <select id="sexo" name='sexo' class="form-control" type="text" formControlName="sexo" placeholder="sexo">
+                        <option></option>
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                        <option>No Binario</option>
+                        <option>Helicoptero</option>
+                        <option>Sin Especificar</option>                        
+                    </select>
+                    <div id='mensaje'>
+                        <small id="sexoHelp" class="form-text text-muted" *ngIf="(sexo.dirty || sexo.touched) && sexo.invalid && sexo.errors.required"> Requerido  </small>
+                    </div>
+                </div>
+                <!--col sexo-->
+                <div class="col-lg-5 col-12 my-2">
+                    <!--col direccion-->
+                    <label for="direccion">Direccion(*)</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input id="direccion" name='direccion' class="form-control" type="text" formControlName="direccion" placeholder="Direccion">
+                        <div id='mensaje'>
+                            <small id="direccionHelp" class="form-text text-muted" *ngIf="(direccion.dirty || direccion.touched) && direccion.invalid && direccion.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+                <!--col direccion-->
             </div>
+            <!--row-->
+            <div class="row my-4">
+                <!--row-->
+                <div class="col-lg-2 col-12 my-2">
+                    <!--col edad-->
+                    <label for="edad">Edad(*)</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input id="edad" name='edad' class="form-control" type="text" formControlName="edad" placeholder="Edad">
+                        <div id='mensaje'>
+                            <small id="edadHelp" class="form-text text-muted" *ngIf="(edad.dirty || edad.touched) && edad.invalid && edad.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+                <!--col edad-->
+                <div class="col-lg-2 col-12 my-2">
+                    <!--col nacionalidad-->
+                    <label for="nacionalidad">Nacionalidad(*)</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input id="nacionalidad" name='nacionalidad' class="form-control" type="text" formControlName="nacionalidad" placeholder="Nacionalidad">
+                        <div id='mensaje'>
+                            <small id="nacionalidadHelp" class="form-text text-muted" *ngIf="(nacionalidad.dirty || nacionalidad.touched) && nacionalidad.invalid && nacionalidad.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+                <!--col nacionalidad-->
+                <div class="col-lg-2 col-12 my-2">
+                    <!--col Ciudad-->
+                    <label for="ciudad">Ciudad(*)</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input id="ciudad" name='ciudad' class="form-control" type="text" formControlName="ciudad" placeholder="ciudad">
+                        <div id='mensaje'>
+                            <small id="ciudadHelp" class="form-text text-muted" *ngIf="(ciudad.dirty || ciudad.touched) && ciudad.invalid && ciudad.errors.required"> Requerido  </small>
+                        </div>
+                    </div>
+                </div>
+                <!--col Ciudad-->
+            </div>
+            <!--row-->
+            <!--boton agregar-->
+            <div [ngSwitch]="getUrl()">
+                <div *ngSwitchCase="'/screen-paciente'">
+                    <button class="btn btn-primary my-3" (click)="navegarPaciente2()" type="submit" [disabled]="!checkoutForm.valid">Siguiente</button>
+                </div>
+                <div *ngSwitchCase="'/screen-paciente-admin'">
+                    <button class="btn btn-primary my-3" (click)="navegarPaciente2Admin()" type="submit" [disabled]="!checkoutForm.valid">Siguiente</button>
+                </div>
+            </div>
+            <!--boton agregar-->
+            <div id='mensaje' [style.visibility]="isDivVisible ? 'visible' : 'hidden'" class="alert alert-success" role="alert">{{mensaje}}</div>
         </div>
     </div>
-
-    <div class="form-row">
-        <div class="col-md-4 mb-3 ">
-            <label for="validationCustom03">Medico Quien lo Atiende</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
-        <div class="col-md-2 mb-3 mr-4">
-            <label for="validationCustom03">Fecha Ingreso</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-          Agree to terms and conditions
-        </label>
-        </div>
-    </div>
-    <button class="btn btn-primary" type="submit">Submit form</button>
+    <!--container-->
 </form>
