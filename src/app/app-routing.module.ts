@@ -48,9 +48,10 @@ const routes: Routes = [
   { path: 'screen-acerca-de-admin', component: ScreenAcercaDeAdminComponent },
   { path: 'screen-lista-pacientes', component: ScreenListaPacientesComponent },
   { path: 'screen-lista-pacientes-admin', component: ScreenListaPacientesAdminComponent },
-  { path: 'screen-info-paciente', component: ScreenInfoPacienteComponent },
-  { path: 'screen-info-paciente-admin', component: ScreenInfoPacienteAdminComponent },
+  { path: 'screen-info-paciente/:id', component: ScreenInfoPacienteComponent },
+  { path: 'screen-info-paciente-admin/:id', component: ScreenInfoPacienteAdminComponent },
   {path: 'screen-paciente-parte3-admin', component: ScreenPacienteParte3AdminComponent},
+  
   {path: '', redirectTo: '/screen-home', pathMatch: 'full'}
 ];
 
