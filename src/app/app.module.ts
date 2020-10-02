@@ -21,6 +21,7 @@ import { FormularioPacienteComponent } from './components/component/formulario-p
 import { CollapsibleInComponent } from './components/component/collapsible-in/collapsible-in.component';
 import { SectionComponent } from './components/component/section/section.component';
 
+
 //----------------------------------------------------------------------
 import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
 
