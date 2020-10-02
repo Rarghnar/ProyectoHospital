@@ -23,6 +23,7 @@ import { SectionComponent } from './components/component/section/section.compone
 
 //----------------------------------------------------------------------
 import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
+
 //-----------------------------------------------------------------------------------
 
 import { ScreenPacienteParte2Component } from './components/screens/screen-paciente-parte2/screen-paciente-parte2.component';
@@ -49,6 +50,7 @@ import { ScreenPacienteParte3AdminComponent } from './components/screens/screen-
 import { FormularioPaciente3Component } from './components/component/formulario-paciente3/formulario-paciente3.component';
 import { PacienteCardFullComponent } from './components/component/cards/paciente-card-full/paciente-card-full.component';
 import { PacienteCardNombreComponent } from './components/component/cards/paciente-card-nombre/paciente-card-nombre.component';
+import { PacienteCardNombreAdminComponent} from './components/component/cards/paciente-card-nombre-admin/paciente-card-nombre-admin.component';
 
 
 @NgModule({
@@ -94,6 +96,10 @@ import { PacienteCardNombreComponent } from './components/component/cards/pacien
     FormularioPaciente3Component,
     PacienteCardFullComponent,
     PacienteCardNombreComponent,
+
+   /*  ajsd */
+    PacienteCardNombreAdminComponent,
+
   ],
   imports: [
     BrowserModule,

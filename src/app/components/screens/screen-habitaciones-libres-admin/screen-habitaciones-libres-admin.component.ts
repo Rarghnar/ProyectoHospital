@@ -14,6 +14,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
     this.pacientes = [
       {
+        _id: 1,
        // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
         nombre: 'Exequiel Rodrigo Andrade Rojas ',
         edad: '20',
@@ -29,6 +30,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
       },
 
       {
+        _id: 2,
        // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
         nombre: 'Sebastian Antonio marti Cabrera ',
         edad: '22',
@@ -44,6 +46,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
       },
       {
+        _id: 3,
         // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
          nombre: 'Sebastian Antonio marti Cabrera ',
          edad: '22',
@@ -59,6 +62,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
        },
        {
+        _id: 4,
         // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
          nombre: 'Sebastian Antonio marti Cabrera ',
          edad: '22',
@@ -74,6 +78,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
        },
        {
+        _id: 5,
         // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
          nombre: 'Sebastian Antonio marti Cabrera ',
          edad: '22',
@@ -90,6 +95,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
        },
 
       {
+        _id: 6,
         //  imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
           nombre: 'Anibal Escalante Verdura Antonia',
           edad: '22',
@@ -105,6 +111,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
         },
         {
+          _id: 7,
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
@@ -119,6 +126,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
          },
          {
+          _id: 8,
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
@@ -133,6 +141,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
          },
          {
+          _id: 9,
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
@@ -147,6 +156,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
          },
          {
+          _id: 10,
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
@@ -161,6 +171,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
          },
          {
+          _id: 11,
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
@@ -175,6 +186,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
          },
          {
+          _id: 12,
           // imgURL: 'https://i.blogs.es/68e984/jinx_article_banner/450_1000.jpg',
            nombre: 'Exequiel Rodrigo Andrade Rojas ',
            edad: '20',
@@ -189,6 +201,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
          },
          {
+          _id: 13,
           // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
            nombre: 'Sebastian Antonio marti Cabrera ',
            edad: '22',
@@ -204,6 +217,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
          }, 
          {
+          _id: 14,
           // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
            nombre: 'Sebastian Antonio marti Cabrera ',
            edad: '22',
@@ -219,6 +233,7 @@ export class ScreenHabitacionesLibresAdminComponent implements OnInit {
 
          },
          {
+          _id: 15,
           // imgURL: 'https://www.esportmaniacos.com/wp-content/uploads/2020/09/samira.jpg',
            nombre: 'Sebastian Antonio marti Cabrera ',
            edad: '22',
