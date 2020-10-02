@@ -52,6 +52,8 @@ import { PacienteCardFullComponent } from './components/component/cards/paciente
 import { PacienteCardNombreComponent } from './components/component/cards/paciente-card-nombre/paciente-card-nombre.component';
 import { ScreenRecuperarPassComponent } from './components/screens/screen-recuperar-pass/screen-recuperar-pass.component';
 import { RecuperarPassComponent } from './components/component/recuperar-pass/recuperar-pass.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -110,6 +112,7 @@ import { RecuperarPassComponent } from './components/component/recuperar-pass/re
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
