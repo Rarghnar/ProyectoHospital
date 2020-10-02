@@ -2,6 +2,7 @@
 
     <h1>Agregar Nuevo Paciente</h1>
     <div class="dropdown-divider  border-secundary"></div>
+
     <div id='mensaje' [style.visibility]="isDivVisible ? 'visible' : 'hidden'" class="alert alert-success" role="alert">{{mensaje}}</div>
 
 
@@ -89,7 +90,7 @@
                 <!--row-->
                 <div class="col-lg-2 col-12 my-2">
                     <!--col fecha-->
-                    <label for="fechaIng">Fecha Ingreso</label>
+                    <label for="fechaIng">Fecha Ingreso(*)</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                         </div>
@@ -102,7 +103,7 @@
                 <!--col fecha-->
                 <div class="col-lg-2 col-12 my-2">
                     <!--col Hora Ingreso-->
-                    <label for="horaIng">Hora Ingreso</label>
+                    <label for="horaIng">Hora Ingreso(*)</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                         </div>
@@ -195,9 +196,45 @@
             <!--row-->
             <!--habitaciones-->
             <!--boton agregar-->
-            <button class="btn btn-primary my-3" type="submit" [disabled]="!checkoutForm.valid">Agregar</button>
+            <div [ngSwitch]="getUrl()">
+                <div *ngSwitchCase="'/screen-paciente-parte2'">
+                    <div class="row">
+                        <div class="col-lg-8 col-12">
+                            <button class="btn btn-primary my-3 mx-3" type="submit" [disabled]="!checkoutForm.valid">Agregar</button>
+
+                        </div>
+                        <div class="col-lg-2">
+                            <button class="btn btn-warning my-3 mx-3" (click)="navegarAtras()"> Atras</button>
+
+                        </div>
+                        <div class="col-lg-2">
+                            <button class="btn btn-danger my-3 mx-3" (click)="navegarCancelar()"> Cancelar</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div *ngSwitchCase="'/screen-paciente-parte3-admin'">
+                    <div class="row">
+                        <div class="col-lg-8 col-12">
+                            <button class="btn btn-primary my-3 mx-3" type="submit" [disabled]="!checkoutForm.valid">Agregar</button>
+
+                        </div>
+                        <div class="col-lg-2">
+                            <button class="btn btn-warning my-3 mx-3" (click)="navegarAtrasAdmin()"> Atras</button>
+
+                        </div>
+                        <div class="col-lg-2">
+                            <button class="btn btn-danger my-3 mx-3" (click)="navegarCancelarAdmin()"> Cancelar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!--boton agregar-->
         </div>
+        <label for=""> (*) Campo Obligatorio</label>
+
     </div>
     <!--container-->
 </form>

@@ -10,19 +10,39 @@ import { Router } from '@angular/router';
 export class FormularioPaciente3Component implements OnInit {
 
   checkoutForm: FormGroup;
-  mensaje:string="";
+  mensaje: string = "";
   isDivVisible = false;
   
   constructor(private router: Router) {
     this.checkoutForm = this.createFormGroup();
 
-   }
+  }
 
   ngOnInit(): void {
+  }
+
+  public getUrl() {
+    return this.router.url;
   }
   navegarPaciente3() {
     this.router.navigate(['/screen-paciente-parte3']);
   }
+
+  navegarAtras() {
+    this.router.navigate(['/screen-paciente']);
+  }
+
+  navegarCancelar() {
+    this.router.navigate(['/screen-home-ingresado'])
+  }
+  navegarAtrasAdmin() {
+    this.router.navigate(['/screen-paciente-admin']);
+  }
+
+  navegarCancelarAdmin() {
+    this.router.navigate(['/screen-home-ingresado-admin'])
+  }
+
   createFormGroup() {
     return new FormGroup({
       nombres: new FormControl('', [Validators.required]),

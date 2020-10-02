@@ -1,0 +1,35 @@
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" class="px-4 py-4">
+
+    <h1>General</h1>
+    <div class="dropdown-divider  border-primary"></div>
+    <div id='mensaje' [style.visibility]="isDivVisible ? 'visible' : 'hidden'" class="alert alert-success" role="alert">{{mensaje}}</div>
+
+
+    <div id='formulario' [ngClass]="{lleno: mensaje}">
+        <label for="usuario">Usuario Email</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+            </div>
+            <input id="usuario" name='usuario' class="form-control" type="email" formControlName="usuario" placeholder="email@example.com">
+            <div id='mensaje'>
+                <small id="emailHelp" class="form-text text-muted" *ngIf="(usuario.dirty || usuario.touched) && usuario.invalid && usuario.errors.required"> Requerido  </small>
+                <small id="emailHelp" class="form-text text-muted" *ngIf="(usuario.dirty || usuario.touched) && usuario.invalid && usuario.errors.pattern">Formato email requerido</small>
+            </div>
+        </div>
+
+        <button class="btn btn-primary mt-3">Enviar Codigo</button>
+
+        <div for="codigo" style="padding-top: 20px;">Codigo</div>
+        <div class="input-group my-2">
+            <div class="input-group-prepend">
+            </div>
+            <input id="codigo" class="form-control" type="text" formControlName="codigo" placeholder="0000-0000">
+            <div id='mensaje'>
+                <small id="codigoHelp" class="form-text text-muted" *ngIf="(codigo.dirty || codigo.touched) && codigo.invalid && codigo.errors.required"> Requerido </small>
+            </div>
+        </div>
+
+        <button class="btn btn-primary my-3" type="submit" [disabled]="!checkoutForm.valid">Recuperar</button>
+
+    </div>
+</form>

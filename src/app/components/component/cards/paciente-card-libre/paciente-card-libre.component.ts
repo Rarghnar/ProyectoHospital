@@ -18,9 +18,14 @@ export class PacienteCardLibreComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navegarinfo( ){
+  navegarinfo1( ){
     this.router.navigate(["/screen-paciente"]);
   }
-
+  navegarinfo2( ){
+    this.router.navigate(["/screen-paciente-admin"]);
+  }
+  public getUrl(): string {
+    return this.router.url;
+  }
 
 }

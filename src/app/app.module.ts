@@ -50,7 +50,8 @@ import { ScreenPacienteParte3AdminComponent } from './components/screens/screen-
 import { FormularioPaciente3Component } from './components/component/formulario-paciente3/formulario-paciente3.component';
 import { PacienteCardFullComponent } from './components/component/cards/paciente-card-full/paciente-card-full.component';
 import { PacienteCardNombreComponent } from './components/component/cards/paciente-card-nombre/paciente-card-nombre.component';
-import { PacienteCardNombreAdminComponent} from './components/component/cards/paciente-card-nombre-admin/paciente-card-nombre-admin.component';
+import { ScreenRecuperarPassComponent } from './components/screens/screen-recuperar-pass/screen-recuperar-pass.component';
+import { RecuperarPassComponent } from './components/component/recuperar-pass/recuperar-pass.component';
 
 
 @NgModule({
@@ -98,7 +99,10 @@ import { PacienteCardNombreAdminComponent} from './components/component/cards/pa
     PacienteCardNombreComponent,
 
    /*  ajsd */
-    PacienteCardNombreAdminComponent,
+
+   ScreenRecuperarPassComponent,
+
+   RecuperarPassComponent,
 
   ],
   imports: [

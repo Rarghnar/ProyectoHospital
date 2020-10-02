@@ -24,6 +24,8 @@ import { ScreenListaPacientesAdminComponent } from './components/screens/screen-
 import { ScreenInfoPacienteComponent } from './components/screens/screen-info-paciente/screen-info-paciente.component';
 import { ScreenInfoPacienteAdminComponent } from './components/screens/screen-info-paciente-admin/screen-info-paciente-admin.component';
 import { ScreenPacienteParte3AdminComponent } from './components/screens/screen-paciente-parte3-admin/screen-paciente-parte3-admin.component';
+import { ScreenRecuperarPassComponent } from './components/screens/screen-recuperar-pass/screen-recuperar-pass.component';
+
 
 const routes: Routes = [
   {path: 'screen-home', component: ScreenHomeComponent },
@@ -50,6 +52,7 @@ const routes: Routes = [
   { path: 'screen-lista-pacientes-admin', component: ScreenListaPacientesAdminComponent },
   { path: 'screen-info-paciente/:id', component: ScreenInfoPacienteComponent },
   { path: 'screen-info-paciente-admin/:id', component: ScreenInfoPacienteAdminComponent },
+  {path: 'screen-recuperar-pass', component: ScreenRecuperarPassComponent},
   {path: 'screen-paciente-parte3-admin', component: ScreenPacienteParte3AdminComponent},
   
   {path: '', redirectTo: '/screen-home', pathMatch: 'full'}

@@ -145,6 +145,7 @@
                 <div *ngSwitchCase="'/screen-paciente-admin'">
                     <button class="btn btn-primary my-3" (click)="navegarPaciente2Admin()" type="submit" [disabled]="!checkoutForm.valid">Siguiente</button>
                 </div>
+                <label for=""> (*) Campo Obligatorio</label>
             </div>
             <!--boton agregar-->
             <div id='mensaje' [style.visibility]="isDivVisible ? 'visible' : 'hidden'" class="alert alert-success" role="alert">{{mensaje}}</div>
